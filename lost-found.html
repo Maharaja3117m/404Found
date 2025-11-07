@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost & Found | CampusConnect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <nav class="bg-blue-600 text-white px-6 py-4">
+    <h1 class="text-2xl font-bold">CampusConnect</h1>
+  </nav>
+
+  <section class="p-8">
+    <h2 class="text-3xl font-bold mb-4">Lost Something?</h2>
+    <form id="lostForm" class="bg-white p-6 rounded-xl shadow-md space-y-4">
+      <input type="text" id="itemName" placeholder="Item Name" class="border p-3 w-full rounded-md">
+      <input type="text" id="location" placeholder="Last Seen Location" class="border p-3 w-full rounded-md">
+      <button type="button" onclick="addLostItem()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">Add Item</button>
+    </form>
+
+    <div id="lostItems" class="mt-6 space-y-4"></div>
+  </section>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
